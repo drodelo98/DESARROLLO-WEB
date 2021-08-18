@@ -7,10 +7,12 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
+    background-color: #e9ecef;
 }
 
 
@@ -29,7 +31,6 @@ body {
     padding-top: 4rem;
     padding-bottom: 2.5rem;
     width: 85%;
-    background-color: #0b090a;
     color: #f8f9fa;
     font-size: 3rem;
     font-weight:400;
@@ -37,7 +38,7 @@ body {
     transform: rotate(-3deg); 
     border-radius: 0.6em;
     margin-bottom: 2rem;
-    background-image: radial-gradient(circle at 12.5% 12.5%, #676767 0, #555f5f 16.67%, #425659 33.33%, #2b4d53 50%, #0a434f 66.67%, #003a4b 83.33%, #003249 100%);
+    background-image: radial-gradient(circle at 15.19% 91.48%, #553604 0, #503801 5.56%, #4a3a00 11.11%, #453c00 16.67%, #3f3e01 22.22%, #394003 27.78%, #324107 33.33%, #2b430c 38.89%, #234411 44.44%, #194517 50%, #0b461d 55.56%, #004723 61.11%, #004729 66.67%, #004830 72.22%, #004836 77.78%, #00483d 83.33%, #004843 88.89%, #00484a 94.44%, #004850 100%);
 }
 
 nav {
@@ -49,9 +50,8 @@ nav {
     align-items: center;
     justify-content:space-evenly;
     width: 100%;
-    background-color: #161a1d;
-    color: white;
-    opacity: 90%;
+    backdrop-filter: blur(10px);
+    
 
 }
 .nav-item{
@@ -59,12 +59,13 @@ nav {
     padding: 1rem;
     width: auto;
 }
-.nav-item a{
+.nav-item a, .icono a, .botonarriba a{
     display: inline-block;
     padding: 1rem;
     width: auto;
     text-decoration: none;
-    color: white;
+    color: #212529;
+    font-size: 2rem;
 }
 
 .container-main {
@@ -91,7 +92,7 @@ nav {
     margin-top: 2rem;
     position: relative;
     z-index: 90;
-    border: 0.4rem solid white;
+    border: 0.3rem solid #e9ecef;
 }
 
 .container-main__foto .logo{
@@ -115,7 +116,7 @@ nav {
     font-size: 3rem; 
 }
 
-.fas{
+.fas , .fab{
     font-size: 6rem;
 }
 
@@ -124,6 +125,7 @@ nav {
     width: 100%;
     height: auto;
     text-align: center;
+    
     
 }
 .aboutme{
@@ -141,6 +143,44 @@ nav {
 
 }
 
+.interests{
+    margin-bottom: 5rem;
+}
 
+.network{
+    padding-top: 3rem;
+    background-image: radial-gradient(circle at 15.19% 91.48%, #553604 0, #503801 5.56%, #4a3a00 11.11%, #453c00 16.67%, #3f3e01 22.22%, #394003 27.78%, #324107 33.33%, #2b430c 38.89%, #234411 44.44%, #194517 50%, #0b461d 55.56%, #004723 61.11%, #004729 66.67%, #004830 72.22%, #004836 77.78%, #00483d 83.33%, #004843 88.89%, #00484a 94.44%, #004850 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.network .titulo1{
+    width: 100%;
+    padding-bottom: 1rem;
+}
 
+.network .icono{
+    width: 30%;
+    padding-bottom: 1rem;
+}
+
+.icono a{
+    color: black;
+}
+
+.botonarriba{
+    position: fixed;
+    bottom: 2.5rem;
+    right: 1rem;
+    color: grey;
+}
+
+.botonarriba .fas{
+    font-size: 5rem;
+}
+
+.botonarriba a{
+    padding: 0rem;
+}
